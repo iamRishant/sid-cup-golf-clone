@@ -1,3 +1,16 @@
+var crsr=document.querySelector("#cursor");
+var blur=document.querySelector("#cursor-blur");
+
+document.addEventListener("mousemove",(dets)=>{
+    // the below code will will change the position of cursor div with the mouse x and y cordinate from top and bottom but mouse point left corner par krega div to usko center me laane me liye we will substract its height/2 and width/2
+    crsr.style.left=dets.x - 10 +"px"//-10 coz width is 20 px to x should be in middle by defalue top left corner par rhega x coordinate
+    crsr.style.top=dets.y - 10 + "px"
+    blur.style.left=dets.x-200+"px"
+    blur.style.top=dets.y-200+"px"
+})
+
+
+
 // to learn scroll trigger watch this  https://gsap.com/docs/v3/Plugins/ScrollTrigger/#:~:text=Embed%20scroll%20triggers%20directly%20into,place%20between%20certain%20scroll%20positions.
 gsap.to("#nav", {
     backgroundColor: "#000", // Change the background color to black
