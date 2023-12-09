@@ -5,8 +5,8 @@ document.addEventListener("mousemove",(dets)=>{
     // the below code will will change the position of cursor div with the mouse x and y cordinate from top and bottom but mouse point left corner par krega div to usko center me laane me liye we will substract its height/2 and width/2
     crsr.style.left=dets.x - 10 +"px"//-10 coz width is 20 px to x should be in middle by defalue top left corner par rhega x coordinate
     crsr.style.top=dets.y - 10 + "px"
-    blur.style.left=dets.x-200+"px"
-    blur.style.top=dets.y-200+"px"
+    blur.style.left=dets.x-100+"px"
+    blur.style.top=dets.y-100+"px"
 })
 
 
@@ -33,7 +33,7 @@ gsap.to("#main",{
         scroller:"body",
         // markers:true,
         start:"top -25%",
-        end:"top -80%",
+        end:"top -75%",
         scrub:2
     }
 })
