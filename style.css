@@ -269,3 +269,93 @@ video{
     width: 10%;
     
 }
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+/* selects paragraphs that are direct children page3 */
+#page3>p{
+    font-size: 30px;
+    font-weight: 700;
+    width: 45%;
+    text-align: center;
+    line-height: 40px;
+}
+#page3 img{
+    /* whenever we give position absolute we have to give parent element position element relative in this case page 3 is parent */
+    position: absolute;
+    height: 40px;
+}
+#page3 #colon1{
+    left: 20%;
+    top: 25%;
+}
+#page3 #colon2{
+    right: 20%;
+    bottom: 30%;
+}
+
+#page4{
+    height: 30vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+}
+.elem{
+    height: 70%;
+    width: 26%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    
+}
+.elem h4{
+    height: 100%;
+    width: 100%;
+    background-color: #95C11E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: absolute;
+    z-index: 100;
+    font-size: 40px;
+    font-weight: 700;
+    transition: all ease 0.5s;
+
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* pehle bdda hoga scale 1.1 ke wjh se then jab hover hoga tbb normal hoga */
+    scale: 1.1;
+    transition: all ease 0.5s;
+}
+/* it means elem par jab hover hoga to uske andar ka jo h4 hai uske andr ka changes */
+.elem:hover h4{
+    color: white;
+    background-color: transparent;
+}
+.elem:hover img{
+    scale: 1;
+}
+#page4 h2{
+    position: absolute;
+    top: -18%;
+    font-family: 'Gilroy-Bold', sans-serif;
+    font-size: 90px;
+    color: black;
+    -webkit-text-stroke: 2px #fff;
+    font-weight: 700;
+}
